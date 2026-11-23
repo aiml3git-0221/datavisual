@@ -32,6 +32,7 @@ if df.empty:
     raise ValueError("No valid records found in dataset.")
 
 app=Dash(__name__)
+server=app.server
 app.layout=html.Div(children=[
     html.H1(
         children="Airbnb Listings - Monterrey",
